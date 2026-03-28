@@ -1,0 +1,22 @@
+# AaaS Caddy Reverse Proxy
+# For local dev with self-signed cert, Caddy auto-generates TLS via its local CA.
+
+localhost:3000 {
+	reverse_proxy frontend:3000
+}
+
+localhost:8000 {
+	reverse_proxy backend:8000
+}
+
+# Production domains — replace with actual domain
+# aaas.example.com {
+# 	reverse_proxy frontend:3000
+# }
+#
+# api.aaas.example.com {
+# 	reverse_proxy backend:8000
+# 	header {
+# 		Access-Control-Allow-Origin "https://aaas.example.com"
+# 	}
+# }

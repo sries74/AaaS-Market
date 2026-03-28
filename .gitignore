@@ -1,0 +1,39 @@
+# Environment files — NEVER commit
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
